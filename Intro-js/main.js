@@ -1,20 +1,30 @@
+//1
 let miNombre = "Yanina"
+//2
 let miApellido = "Ferreira"
+//3
 const miEdad = 23
+//4
 const miMascota = "Cooper"
+//5
 const edadMascota = 2
+//6
 console.log(miNombre);
 console.log(miApellido);
 console.log(miEdad);
 console.log(miMascota);
 console.log(edadMascota);
+//7
 let nombreCompleto = miNombre + miApellido
+//8
 const aux = `Hola mi nombre es ${miNombre} ${miApellido}.
 Tengo ${miEdad} años y una mascota que se llama ${miMascota} que tiene ${edadMascota} años`
+//9
 let sumaEdades = miEdad + edadMascota
 let restaEdades = miEdad - edadMascota
 let productosEdades = miEdad * edadMascota
 let divisionEdades = miEdad / edadMascota 
+//10
 let alumno = {
     altura: 1.62,
     pesoKg: 56,
@@ -28,6 +38,7 @@ console.log(alumno.pesoKg);
 console.log(alumno.calce);
 console.log(alumno.colorDeCabello);
 console.log(alumno.nacionalidad);
+//11
 let mascota ={
     tamaño: "Grande",
     raza: "mestizo de Pitbull",
@@ -41,6 +52,7 @@ console.log(mascota.raza);
 console.log(mascota.colorDePelaje);
 console.log(mascota.comportamiento);
 console.log(mascota.vacunas);
+//12
 const frutas = ["Naranja","Durazno", "Frutilla","Anana","Pera","Uvas"]
 console.log(frutas[0]);
 console.log(frutas[1]);
@@ -48,9 +60,11 @@ console.log(frutas[2]);
 console.log(frutas[3]);
 console.log(frutas[4]);
 console.log(frutas[5]);
+//13
 let edadIngresada = prompt("ingrese su edad")
 let soyMayorDeEdad = 18
 console.log(` Soy mayor de edad  ${edadIngresada >= soyMayorDeEdad}`);
+//14
 const numeros = [5,6,7,8,9,10]
 console.log(numeros);
 console.log(numeros[0]);
@@ -59,6 +73,7 @@ console.log(numeros[2]);
 console.log(numeros[3]);
 console.log(numeros[4]);
 console.log(numeros[5]);
+//15
 const familia = ["hijo","mamá","papá", "abuela", "abuelo"]
 console.log(familia);
 console.log(familia[0]);
@@ -66,7 +81,9 @@ console.log(familia[1]);
 console.log(familia[2]);
 console.log(familia[3]);
 console.log(familia[4]);
+//16
 let textoAleatorio = `los ${frutas[1]} y el numero ${numeros[3]} son algunas de las cosas favoritas del ${familia[0]}`
+//17
 let compañero1 = Number(prompt("Ingrese edad del compañero1"))
 let compañero2Yo = Number(prompt("Ingrese mi edad"))
 let edadYani= 23
@@ -77,11 +94,13 @@ const verificarSiSoyMayor=`la edad de compañero1 es menor a la compañero2yo, $
 console.log(verificarSiSoyMayor);
 const verificarSiSoyMenor=`la edad de compañero1 es menor a la compañero2yo, ${edadCami>edadYani}`
 console.log(verificarSiSoyMenor);
+//18
 let edadesDeLasPersonas= Number(prompt("ingrese su edad"))
 let alturaDeLasPersonas= Number(prompt("Ingrese su altura"))
 const comparacion= edadesDeLasPersonas >=6 && alturaDeLasPersonas >=120
 const puedeSubir= `Puede subir a la atraccion, ${comparacion}`
 console.log(puedeSubir);
+//19
 let pase= prompt("Ingrese tipo de Pase")
 let saldo= Number(prompt("ingrese su saldo"))
 let tipoDePase=("vip","normal","limitados")
