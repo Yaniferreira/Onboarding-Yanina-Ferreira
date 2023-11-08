@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./pages/style.css">
+    </head>
+    </html>
+    <title>Dom</title>
+</head>
+<body>
+    <header class="estilo">
+        <h2 class="font-bold">Ejercicio de DOM</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main class="flex flex-col gap-6 ">
+        <h1 id="titulo" class="flex text-4xl font-bold">Datos</h1>
+        <div id="contenedor" class="flex justify-evenly flex-wrap gap-4"></div>
+        <div id="listas" class="flex flex-col gap-2 py-2"></div>
+    </main >
+    <footer class="estilo">
+        <p id="pFooter">MindHub ©</p>
+    </footer>
+    <script src="./pages/data.js"></script>
+    <script src="./pages/main.js"></script>
+    <script type="module" src="./pages/tailwind.config.js"></script>
+</body>
+</html>
