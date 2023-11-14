@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./tailwind.config.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Eventos</title>
+</head>
+
+<body class="bg-blue-300">
+    <header class="text-center">
+        <h1 class="text-6xl">Ejercicio Eventos</h1>
+    </header>
+    <main class="flex flex-row items-center">
+        <div id="contenedorA" class="w-[350px] h-[300px]  bg-violet-800 text-center flex flex-col items-center">
+            <div class="nuevo-color w-[200px]  bg-indigo-500 flex mt-12" id="cuadradocolorA">
+            </div>
+            <label class="">
+                <input type="submit" value="nuevo cambio" name="submit" id="cambiarA"
+                    class="bg-purple-500 w-[100px]  mt-12">
+            </label>
+        </div>
+        <div id="contenedorB" class="w-[300px]  bg-blue-500 flex flex-col items-center">
+            <div id="cuadradotextoB" class="w-[200px]  bg-indigo-500 flex mt-12 items-center text-center ">
+                
+            </div>
+            <label for=""class="flex flex-col items-center">
+                <input type="text" value="ingresar texto" name="textoB" id="textoB" class="w-[150px] h-[100px] mt-12 text-center">
+                <input type="button" value="limpiar" id="limpiarB" class="bg-purple-500 w-[150px] h-[100px] mt-12" >
+            </label>
+        </div>
+        <div id="contenedorC" class="w-[600px] h-[750px] bg-blue-500 flex flex-col items-center" >
+            <form class="flex mt-12 flex-col items-center text-center">
+                <label for="kilogramos" class="flex flex-col items-center" >Kilogramos: </label>
+                <input type="number" id="kilogramos" placeholder="Ingrese su peso">
+            
+                <label for="centimetros" class="flex flex-col items-center" >Centímetros: </label>
+                <input type="number" id="centimetros" placeholder="Ingrese su altura">
+            
+                <button id="calcularC"class="bg-purple-500 w-[150px] h-[100px] mt-12" >Calcular</button>
+            
+                <label for="imcResultado"class="flex flex-col items-center"> Su índice de masa corporal es: </label>
+                <input type="text" id="imcResultado" readonly>
+              </form>
+        </div>
+       <!-- 4 -->
+<div id="contenedor4" class="w-[600px] h-[750px] bg-blue-700 flex flex-col items-center">
+    <form class="flex mt-12 flex-col items-center text-center">
+        <label for="pesoarg" class="flex flex-col items-center">Pesos Argentinos:</label>
+        <input type="number" id="pesoarg" placeholder="Ingrese el monto en pesos argentinos">
+
+        <label for="dolares" class="flex flex-col items-center">Dólares:</label>
+        <input type="number" id="dolares" placeholder="Ingrese el monto en dólares">
+
+        <label for="resultado" class="flex flex-col items-center">Monto en dólares:</label>
+        <input type="number" id="resultado" readonly>
+
+        <button id="convertir" class="bg-slate-400 w-[150px] h-[100px] mt-12">Convertir</button>
+        <button id="reset" class="bg-slate-400 w-[150px] h-[100px] mt-12">Borrar</button>
+    </form>
+</div>
+    </main>
+    <footer class="text-center font-semibold text-black bg-blue-200">
+        <h4>MINDHUB - Cohort52 - Yanina Ferreira</h4>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
